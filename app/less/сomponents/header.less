@@ -1,0 +1,79 @@
+.header__wrapper {
+  max-width: 1444px;
+  height: 670px;
+  margin: 0 auto;
+  background-image: url(../../img/img-1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 44px;
+  align-items: center;
+  margin-bottom: 117px;
+
+  .logo {
+    width: 24px;
+    height: 52px;
+  
+    img {
+      display: block;
+      width: 100%;
+    };
+  }
+
+  .nav {
+    a {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.875; 
+    margin-left: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    } 
+  }
+}
+
+.header_main {
+  .header_owner-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 218px;
+    height: 285px;
+
+    .img {
+      margin: 0 auto;
+      width: 95px;
+      height: 95px;
+      background-color: #007ACC;
+      margin-bottom: 41px;
+    }
+
+    .name {
+      font-family: "Aller Display", sans-serif;
+      font-weight: 600;
+      font-size: 34px;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      text-align: center;     
+      line-height: 1;
+      margin-bottom: 5px;
+      letter-spacing: 2px;  
+    }
+
+    .profession {
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: rgb(255, 255, 255);
+      line-height: 1.875;
+      text-align: center;
+    }
+  }
+}
