@@ -26,7 +26,8 @@
 
       <div class="header_main">
         <div class="header_owner-card">
-          <div class="img"></div>
+          <div class="img">
+          </div>
           <div class="name">El Nasurov</div>
           <div class="profession">Web developer</div>
           <div class="download-resume">
@@ -43,15 +44,34 @@
   <main>
     <section class="about-me">
       <div class="container">
-        <div class="owner_photo">
-         my photo
+        <div class="section-title title">
+          <span>About me</span>
         </div>
-        <div class="owner_description">
-          Lorem ipsum dolor sit amet consectetur 
-          adipisicing elit. Porro sit eum cupiditate iste, possimus voluptate exercitationem quo id ipsum architecto soluta quae tenetur 
-          praesentium veritatis qui animi consequatur tempore sapiente!
+
+        <div class="section-content">
+          <div class="owner_photo">
+            my photo
+          </div>
+
+          <div class="owner_description">
+            <p class="intro">Я - студент 2 курса, обучающийся по направлению "Информационная безопасность". Увлечение web-разработкой началось на 1 курсе с университетского курса "JavaScript".  С того времени постоянно усовершенствуюсь, изучая новые технологии и применяя их на практике.</p>        
+            <p class="main-sense">Нацелен на построение карьеры в сфере web разработки.</p>
+            <p class="add-info">Аналитический склад ума. Легко обучаюсь, как самостоятельно, так и под менторством. Способен к коллективной разработке. </p>
+            <div class="education">
+
+              <h3 class="education__title">
+                Education
+              </h3>
+              
+              <div class="education__content">
+                <span class="content__item name">Российский Экономический Университет им. Г.В. Плеханова</span>
+                <span class="content__item facult">Институт цифровой экономики и информационных технологий</span>
+                <span class="content__item speciality">Информационная безопасность</span>
+                <span class="content__item date">2017-2021</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </section>
 
     <section class="my-education">
@@ -65,17 +85,18 @@
           <div class="status">is not finished <span>yet</span></div>
         </div>
         <div class="education_description">
-          <div class="description">
+          <p class="description">
             I finished 11 classes of state school in 2017. And having passed the exams successfully I entered the first course of the Russian Economic University by G. V. Plekhanov, at the Faculty of MESI (Mathematical Economics of Statistics and Informatics), for the specialty "Information Security". 
-      
-          </div>
+          </p>
         </div>
       </div>
     </section>
 
     <section class="my-skills">
       <div class="container">
-        <div class="title">My skills</div>
+        <div class="title">
+          <span>My skills</span>
+        </div>
         <div class="canvas-elements">
           <div class="canvas-element">
             <canvas></canvas>
@@ -117,69 +138,95 @@
 
     <section class="my-portfolio">
       <div class="container">
-        <div class="title">My works</div>
-        <div class="my-works">
-          <div class="my-works_item tetris">
-            <figure>
-              <img src="./img/tetris.jpg" alt="">
-              <figcaption>
-                <h2>Tetris</h2>
-                <p>Game is based on native Js</p>
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="my-works_item surfing">
-            <figure>
-              <img src="./img/surfing.jpg" alt="surfing-site">
-              <figcaption>
-                <h2>Surfing-page</h2>
-                <p>Simply template of Surfing site</p>
-              </figcaption>
-            </figure>
-          </div>
-  
-          <div class="my-works_item uber">
-            <figure>
-              <img src="./img/uber.jpg" alt="surfing-site">
-              <figcaption>
-                <h2>Uber</h2>
-                <p>Simply template of Surfing site</p>
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="my-works_item uber">
-            <figure>
-              <img src="./img/uber.jpg" alt="surfing-site">
-              <figcaption>
-                <h2>Uber</h2>
-                <p>Simply template of Surfing site</p>
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="my-works_item surfing">
-            <figure>
-              <img src="./img/surfing.jpg" alt="surfing-site">
-              <figcaption>
-                <h2>Surfing-page</h2>
-                <p>Simply template of Surfing site</p>
-              </figcaption>
-            </figure>
-          </div>
-
-          <div class="my-works_item tetris">
-            <figure>
-              <img src="./img/tetris.jpg" alt="">
-              <figcaption>
-                <h2>Tetris</h2>
-                <p>Game is based on native Js</p>
-              </figcaption>
-            </figure>
-          </div>
+        <div class="title">
+          <span>My works</span>
         </div>
         
+        <div class="my-works">
+          <div class="my-works_item tetris">
+            <div class="img">
+              <img src="./img/tetris.jpg" alt="">
+            </div>
+
+            <div class="description">
+              <span class="description__item name">Tetris</span>
+              <span class="description__item type">Simply game</span>
+              <span class="description__item stack">Native Js, HTML5, CSS3</span>
+              <a href="http://clck.ru/GZLsm" class="description__item link link_github">clck.ru/GZLsm</a>
+              <a href="http://u55229.onhh.ru/" class="description__item link link_site">u55229.onhh.ru/</a>
+            </div>
+          </div>
+
+          <div class="my-works_item surfing">
+            <div class="img">
+              <img src="./img/surfing.jpg" alt="">
+            </div>
+
+            <div class="description">
+              <span class="description__item name">Surfing</span>
+              <span class="description__item type">Landing</span>
+              <span class="description__item stack">HTML5, CSS3</span>
+              <a href="https://clck.ru/GZMEx" class="description__item link link_github">clck.ru/GZMEx</a>
+              <a href="http://u55229.onhh.ru/" class="description__item link link_site">u55229.onhh.ru/</a>
+            </div>
+          </div>
+
+          <div class="my-works_item uber">
+            <div class="img">
+              <img src="./img/uber.jpg" alt="">
+            </div>
+
+            <div class="description">
+              <span class="description__item name">Uber</span>
+              <span class="description__item type">Landing</span>
+              <span class="description__item stack">HTML5, CSS3</span>
+              <a href="https://clck.ru/GZMGr" class="description__item link link_github">https://clck.ru/GZMGr</a>
+              <a href="http://u55229.onhh.ru/" class="description__item link link_site">u55229.onhh.ru/</a>
+            </div>
+          </div>
+
+          <div class="my-works_item uber">
+            <div class="img">
+              <img src="./img/uber-2.jpg" alt="">
+            </div>
+
+            <div class="description">
+              <span class="description__item name">Uber</span>
+              <span class="description__item type">Landing</span>
+              <span class="description__item stack">HTML5, CSS3</span>
+              <a href="https://clck.ru/GZMHs" class="description__item link link_github">clck.ru/GZMHs</a>
+              <a href="http://u55229.onhh.ru/" class="description__item link link_site">u55229.onhh.ru/</a>
+            </div>
+          </div>
+
+          <div class="my-works_item skinali">
+            <div class="img">
+              <img src="./img/skinali.jpg" alt="">
+            </div>
+
+            <div class="description">
+              <span class="description__item name">Skinali</span>
+              <span class="description__item type">Landing</span>
+              <span class="description__item stack">HTML5, CSS3</span>
+              <a href="https://clck.ru/GZMKD" class="description__item link link_github">clck.ru/GZMKD</a>
+              <a href="http://u55229.onhh.ru/" class="description__item link link_site">u55229.onhh.ru/</a>
+            </div>
+          </div>
+
+          <div class="my-works_item uber">
+            <div class="img">
+              <img src="./img/uber-2.jpg" alt="">
+            </div>
+
+            <div class="description">
+              <span class="description__item name">Uber</span>
+              <span class="description__item type">Landing</span>
+              <span class="description__item stack">HTML5, CSS3</span>
+              <a href="https://clck.ru/GZMTM" class="description__item link link_github">clck.ru/GZMTM</a>
+              <a href="http://u55229.onhh.ru/" class="description__item link link_site">u55229.onhh.ru</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
