@@ -1,0 +1,85 @@
+.about-me .container {
+  background-color: #F5F5F5;
+  height: 980px;
+  margin-top: -65px;
+  padding-top: 65px;
+}
+.about-me .container .section-title {
+  margin-bottom: 80px;
+}
+.about-me .container .section-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.about-me .container .owner_photo {
+  width: 350px;
+  height: 600px;
+  border: 1px solid black;
+  text-align: center;
+}
+.about-me .container .owner_description {
+  text-align: justify;
+  font-size: 22px;
+  max-width: 800px;
+  margin-left: 200px;
+}
+.about-me .container .owner_description .main-sense {
+  text-align: center;
+  margin: 35px auto;
+  display: block;
+  max-width: 540px;
+  font-size: 25px;
+  border: 4px solid #FDC426;
+  padding: 5px;
+}
+.about-me .container .owner_description .education {
+  margin-top: 60px;
+  text-align: center;
+}
+.about-me .container .owner_description .education__title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  letter-spacing: 2px;
+}
+.about-me .container .owner_description .education__title:after {
+  content: ' ';
+  margin-left: 5%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 5px;
+  border-bottom: 2px solid #FDC426;
+}
+.about-me .container .owner_description .education__content {
+  margin: 0 auto;
+  text-align: left;
+}
+.about-me .container .owner_description .education__content .name:before {
+  content: "Вуз: ";
+  color: rgba(113, 110, 91, 0.6);
+  font-weight: 500;
+}
+.about-me .container .owner_description .education__content .facult:before {
+  content: "Факультет: ";
+  color: rgba(113, 110, 91, 0.6);
+  font-weight: 500;
+}
+.about-me .container .owner_description .education__content .speciality:before {
+  content: "Специальность: ";
+  color: rgba(113, 110, 91, 0.6);
+  font-weight: 500;
+}
+.about-me .container .owner_description .education__content .date:before {
+  content: "Период: ";
+  color: rgba(113, 110, 91, 0.6);
+  font-weight: 500;
+}
+.about-me .container .owner_description .education .content__item {
+  display: block;
+  margin-bottom: 5px;
+}

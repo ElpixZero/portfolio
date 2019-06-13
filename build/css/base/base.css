@@ -1,0 +1,54 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+a,
+a:hover,
+a:focus,
+.a-active {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1444px;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.download-resume a {
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: center;
+  padding: 19px 46px;
+  border: 1px solid #ffffff;
+}
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.title span {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.title span:after {
+  content: ' ';
+  margin-left: 5%;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 5px;
+  border-bottom: 4px solid #FDC426;
+}

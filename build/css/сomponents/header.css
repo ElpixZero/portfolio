@@ -1,0 +1,87 @@
+.header__wrapper {
+  max-width: 1444px;
+  height: 670px;
+  margin: 0 auto;
+  background-image: url(../../img/img-1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.header_top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding-top: 44px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 117px;
+}
+.header_top .logo {
+  width: 24px;
+  height: 52px;
+}
+.header_top .logo img {
+  display: block;
+  width: 100%;
+}
+.header_top .nav_item {
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.875;
+  margin-left: 40px;
+  -webkit-transition: -webkit-transform 0.5s ease 0.1s;
+  transition: -webkit-transform 0.5s ease 0.1s;
+  transition: transform 0.5s ease 0.1s;
+  transition: transform 0.5s ease 0.1s, -webkit-transform 0.5s ease 0.1s;
+}
+.header_top .nav_item:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.header_top .nav_item:last-child {
+  margin-right: 0;
+}
+.header_main .header_owner-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 218px;
+  height: 285px;
+}
+.header_main .header_owner-card .img {
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+  margin-bottom: 41px;
+  background: #007ACC;
+}
+.header_main .header_owner-card .name {
+  font-family: "Aller Display", sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+.header_main .header_owner-card .profession {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.875;
+  text-align: center;
+}

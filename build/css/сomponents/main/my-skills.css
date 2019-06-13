@@ -1,0 +1,37 @@
+.my-skills .container {
+  height: 450px;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 30px;
+}
+.my-skills .container .title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: black;
+}
+.my-skills .container .canvas-elements {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+}
+.my-skills .container .canvas-elements .canvas-element {
+  text-align: center;
+}
+.my-skills .container .canvas-elements .canvas-element .description {
+  font-size: 17px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+.my-skills .container .canvas-elements .canvas-element .description span {
+  display: block;
+  color: #939295;
+  font-size: 12px;
+  text-transform: lowercase;
+}
