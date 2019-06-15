@@ -60,14 +60,7 @@
   width: 218px;
   height: 285px;
 }
-.header_main .header_owner-card .img {
-  margin: 0 auto;
-  width: 85px;
-  height: 85px;
-  margin-bottom: 41px;
-  background: #007ACC;
-}
-.header_main .header_owner-card .name {
+.header_main .name {
   font-family: "Aller Display", sans-serif;
   font-weight: 600;
   font-size: 34px;
@@ -78,7 +71,7 @@
   margin-bottom: 5px;
   letter-spacing: 2px;
 }
-.header_main .header_owner-card .profession {
+.header_main .profession {
   margin-bottom: 30px;
   font-size: 16px;
   color: #ffffff;

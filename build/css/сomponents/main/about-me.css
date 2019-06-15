@@ -11,18 +11,21 @@
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
 }
 .about-me .container .owner_photo {
-  width: 350px;
-  height: 600px;
-  border: 1px solid black;
-  text-align: center;
+  width: 420px;
+}
+.about-me .container .owner_photo img {
+  width: 100%;
 }
 .about-me .container .owner_description {
   text-align: justify;
   font-size: 22px;
   max-width: 800px;
-  margin-left: 200px;
+  margin-left: 130px;
 }
 .about-me .container .owner_description .main-sense {
   text-align: center;

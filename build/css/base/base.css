@@ -52,3 +52,18 @@ li {
   height: 5px;
   border-bottom: 4px solid #FDC426;
 }
+.logo-owner {
+  border: 2px solid #fff;
+}
+.logo-owner_header {
+  margin: 0 auto;
+  width: 130px;
+  margin-bottom: 30px;
+}
+.logo-owner_footer {
+  width: 120px;
+  margin-right: 30px;
+}
+.logo-owner img {
+  width: 100%;
+}
