@@ -1,7 +1,7 @@
 .contact-me {
   .container {
     height: 670px;
-    background-image: url(../../../img/img-6.png);
+    background-image: url(../img/img-6.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top: -60px;
@@ -12,19 +12,18 @@
   }
 
   .footer_owner-card {
-    max-width: 310px;
-    margin-top: 60px;
+    max-width: 330px;
+    margin-top: 50px;
 
     .owner_logo {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 35px;
+      margin-bottom: 60px;
 
       .img {
         width: 110px;
         height: 95px;
-        background-color: #007ACC;
         margin-right: 15px;
 
         img {
@@ -57,7 +56,7 @@
       font-family: 'Open Sans', sans-serif;
       color: rgb(255, 255, 255);
       line-height: 1;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
 
       &:before {
         font-family: "FontAwesome";
@@ -79,9 +78,13 @@
     .phone {
       font-size: 14px;
       font-family: 'Open Sans', sans-serif;
-      color: rgb(255, 255, 255);
       line-height: 1;
-      margin-bottom: 20px;
+      margin-bottom: 35px;
+
+      a {
+        color: rgb(255, 255, 255);
+      }
+    
 
       &:before {
         font-family: "FontAwesome";
@@ -151,26 +154,30 @@
         font-variant: normal;
         text-rendering: auto;
         line-height: 1;
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
 
-        &-vk:before {
+        &_vk:before {
           content: "\f189";
           font-size: 15px;
           padding: 15px;
           line-height: 45px;
         }
 
-        &-twitter {
+        &_twitter {
           background-color: #FDC426;
         }
 
-        &-twitter:before {
+        &_twitter:before {
           content: "\f099";
           font-size: 15px;
           padding: 15px;
           line-height: 45px;
         }
 
-        &-mail:before {
+        &_mail:before {
           content: "\f0d5";
           font-size: 15px;
           padding: 15px;

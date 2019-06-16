@@ -23,7 +23,7 @@
 }
 .my-portfolio .my-works_item {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   margin-right: 20px;
   max-width: 320px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
@@ -102,11 +102,29 @@
   color: #716e5b;
   letter-spacing: 1.2px;
 }
+.my-portfolio .my-works_item .description .link_site {
+  color: #000;
+}
+.my-portfolio .my-works_item .description .link_site:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  font-weight: 700;
+}
 .my-portfolio .my-works_item .description .link_site:before {
   content: "link: ";
   font-size: 16px;
   color: #716e5b;
   letter-spacing: 1.2px;
+}
+.my-portfolio .my-works_item .description .link_github {
+  color: #000;
+}
+.my-portfolio .my-works_item .description .link_github:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  font-weight: 700;
 }
 .my-portfolio .my-works_item .description .link_github:before {
   content: "github: ";

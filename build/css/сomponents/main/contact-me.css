@@ -14,7 +14,7 @@
 }
 .contact-me .footer_owner-card {
   max-width: 330px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 .contact-me .footer_owner-card .owner_logo {
   display: -webkit-box;
@@ -26,12 +26,11 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  margin-bottom: 35px;
+  margin-bottom: 60px;
 }
 .contact-me .footer_owner-card .owner_logo .img {
   width: 110px;
   height: 95px;
-  background-color: #007ACC;
   margin-right: 15px;
 }
 .contact-me .footer_owner-card .owner_logo .img img {
@@ -59,7 +58,7 @@
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   line-height: 1;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 .contact-me .footer_owner-card .location:before {
   font-family: "FontAwesome";
@@ -79,9 +78,11 @@
 .contact-me .footer_owner-card .phone {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
-  color: #ffffff;
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+}
+.contact-me .footer_owner-card .phone a {
+  color: #ffffff;
 }
 .contact-me .footer_owner-card .phone:before {
   font-family: "FontAwesome";
@@ -149,22 +150,28 @@
   text-rendering: auto;
   line-height: 1;
 }
-.contact-me .footer_owner-card .social .icon-vk:before {
+.contact-me .footer_owner-card .social .icon:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+.contact-me .footer_owner-card .social .icon_vk:before {
   content: "\f189";
   font-size: 15px;
   padding: 15px;
   line-height: 45px;
 }
-.contact-me .footer_owner-card .social .icon-twitter {
+.contact-me .footer_owner-card .social .icon_twitter {
   background-color: #FDC426;
 }
-.contact-me .footer_owner-card .social .icon-twitter:before {
+.contact-me .footer_owner-card .social .icon_twitter:before {
   content: "\f099";
   font-size: 15px;
   padding: 15px;
   line-height: 45px;
 }
-.contact-me .footer_owner-card .social .icon-mail:before {
+.contact-me .footer_owner-card .social .icon_mail:before {
   content: "\f0d5";
   font-size: 15px;
   padding: 15px;

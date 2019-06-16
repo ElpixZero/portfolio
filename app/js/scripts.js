@@ -1,10 +1,8 @@
 const $ = require('jquery');
 
-
 $(document).ready(function() {
 
-	let canvas = $('.canvas-elements canvas');
-
+	const canvas = $('.canvas-elements canvas');
 	for (let a = 0; a < canvas.length; a++) {
 
 		let args = {
@@ -57,9 +55,19 @@ $(document).ready(function() {
 		var text = args.text[a]; 
 		var metrics = c.measureText(text); 
 		c.fillText(text, 55, 80, 400); 
-	}
+	};
 
+	$('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    const _href = $(this).attr('href');
+    let start = $(window).scrollTop();
+    let dest = $(_href).offset().top - 30;
+    let s = Math.abs(start - dest);
 
+    $("html, body").animate({
+      scrollTop: dest,
+    }, s/3);
+  });
 
 
 

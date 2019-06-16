@@ -22,12 +22,13 @@
                         
     &_item {
       position: relative;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
       margin-right: 20px;
       max-width: 320px;
       box-shadow: 0 5px 5px rgba(0,0,0,.15);
-
       &:hover {
+        // transform: scale(1.1);
+
         .description {
           display: flex;
           bottom: -111%;
@@ -107,6 +108,11 @@
 
         .link {
           &_site {
+            color: #000;
+            &:hover {
+              transform: scale(1.05);
+              font-weight: 700;
+            }
             &:before {
               content: "link: ";
               font-size: 16px;
@@ -116,6 +122,11 @@
           }
           
           &_github {
+            color: #000;
+            &:hover {
+              transform: scale(1.05);
+              font-weight: 700;
+            }
             &:before {
               content: "github: ";
               font-size: 16px;

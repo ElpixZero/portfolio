@@ -24,6 +24,11 @@
 .my-skills .container .canvas-elements .canvas-element {
   text-align: center;
 }
+.my-skills .container .canvas-elements .canvas-element:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .my-skills .container .canvas-elements .canvas-element .description {
   font-size: 17px;
   margin-top: 15px;
