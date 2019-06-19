@@ -1,6 +1,5 @@
 .my-skills {
   .container {
-    height: 450px;
     //background-image: url(../../../img/img-4.png);
    background-color: #FFF;
     background-repeat: no-repeat;
@@ -17,11 +16,14 @@
     }
 
     .canvas-elements {
+      padding-bottom: 120px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       font-family: 'Open Sans', sans-serif;
-
+      flex-wrap: wrap;
+      
       .canvas-element {
+        min-width: 150px;
         text-align: center;
         &:hover {
           transform: scale(1.1);
@@ -43,4 +45,51 @@
     }
   }
 }
+
+@media (max-width: 1050px) {
+  .my-skills {
+    .container {
+      .canvas-elements {
+        padding-bottom: 20px;
+      }
+    
+      .canvas-element {
+        flex-basis: 33%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .canvas-elements {
+    padding-bottom: 20px;
+  }
+
+  .canvas-element {
+    flex-basis: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (max-width: 390px) {
+  .my-skills {
+    .container {
+      .canvas-elements {
+        justify-content: center;
+      }
+    
+      .canvas-element {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+
+
+
+
 

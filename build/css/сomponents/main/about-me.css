@@ -1,6 +1,5 @@
 .about-me .container {
   background-color: #F5F5F5;
-  height: 980px;
   margin-top: -65px;
   padding-top: 65px;
 }
@@ -14,6 +13,7 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
+  padding-bottom: 110px;
 }
 .about-me .container .owner_photo {
   width: 420px;

@@ -1,5 +1,34 @@
 const $ = require('jquery');
 
+/*
+const nodemailer = require("nodemailer");
+const transporter = nodemailer.createTransport({
+	host: 'smtp.yandex.ru',
+	port: 465,
+	secure: true, // true for 465, false for other ports
+	auth: {
+			user: 'portfolio-elpix@yandex.ru',
+			pass: 'xUssrru-001y'
+	},
+	from: 'Mailer test <portfolio-elpix@yandex.ru>',
+});
+
+const mailer = message => {
+	transporter.sendMail(message, (err, info) => {
+		if (err) console.log(err);
+		console.log('Email sent:', info);
+	})
+}
+
+const message = {
+	from: 'Mailer test <mckenzie.kihn79@ethereal.email>',
+	to: "someadress@mail.ru",
+	subjects: 'Fuck you',
+	text: "I'm the Conor Mcgregor. You know everything. Just do it"
+}
+
+mailer(message);
+*/
 $(document).ready(function() {
 
 	const canvas = $('.canvas-elements canvas');
@@ -39,7 +68,7 @@ $(document).ready(function() {
 				args.arc.endCircle[a][i]*Math.PI, true);
 
 			if (i == 1) {
-				c.lineTo(75, 75); 
+				c.lineTo(75, 75);
 				console.log('jr');
 			}
 
@@ -67,9 +96,22 @@ $(document).ready(function() {
     $("html, body").animate({
       scrollTop: dest,
     }, s/3);
-  });
+	});
+	
+	$('.feedback-form').on('submit', function(e) {
+		e.preventDefault();
+		const $submit = $('.input-submit');
+		$submit.addClass('button_disabled');
+		
+		const $result = $('<div id="error-mail"> К сожалению, в данный момент сервис автоматической отправки писем не доступен. </div>');
+		$result.addClass("mail-error");
+		$('.feedback').prepend($result);
 
-
-
+		setTimeout(function() {
+			$result.remove();
+			$submit.removeClass('button_disabled');
+		}, 3500);
+		
+	})
 
 });

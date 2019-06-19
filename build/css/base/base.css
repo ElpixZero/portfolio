@@ -67,3 +67,13 @@ li {
 .logo-owner img {
   width: 100%;
 }
+.button_disabled {
+  pointer-events: none;
+  background-color: #8c6c11 !important;
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

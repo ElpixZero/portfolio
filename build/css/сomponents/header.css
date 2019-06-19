@@ -1,6 +1,6 @@
 .header__wrapper {
   max-width: 1444px;
-  height: 670px;
+  max-height: 670px;
   margin: 0 auto;
   background-image: url(../img/img-1.png);
   background-size: 100% 100%;
@@ -19,7 +19,6 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  margin-bottom: 117px;
 }
 .header_top .logo {
   width: 24px;
@@ -47,6 +46,10 @@
 }
 .header_top .nav_item:last-child {
   margin-right: 0;
+}
+.header_main {
+  padding-top: 117px;
+  padding-bottom: 172px;
 }
 .header_main .header_owner-card {
   display: -webkit-box;
@@ -77,4 +80,18 @@
   color: #ffffff;
   line-height: 1.875;
   text-align: center;
+}
+@media (max-width: 600px) {
+  .header_top .nav_item {
+    font-size: 13px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 424px) {
+  .header_top {
+    display: none;
+  }
+  .header_main {
+    padding-bottom: 117px;
+  }
 }

@@ -1,5 +1,4 @@
 .my-skills .container {
-  height: 450px;
   background-color: #FFF;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -14,14 +13,19 @@
   color: black;
 }
 .my-skills .container .canvas-elements {
+  padding-bottom: 120px;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-around;
-          justify-content: space-around;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
   font-family: 'Open Sans', sans-serif;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .my-skills .container .canvas-elements .canvas-element {
+  min-width: 150px;
   text-align: center;
 }
 .my-skills .container .canvas-elements .canvas-element:hover {
@@ -39,4 +43,36 @@
   color: #939295;
   font-size: 12px;
   text-transform: lowercase;
+}
+@media (max-width: 1050px) {
+  .my-skills .container .canvas-elements {
+    padding-bottom: 20px;
+  }
+  .my-skills .container .canvas-element {
+    -webkit-flex-basis: 33%;
+            flex-basis: 33%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .canvas-elements {
+    padding-bottom: 20px;
+  }
+  .canvas-element {
+    -webkit-flex-basis: 50%;
+            flex-basis: 50%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 390px) {
+  .my-skills .container .canvas-elements {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
+  .my-skills .container .canvas-element {
+    -webkit-flex-basis: 100%;
+            flex-basis: 100%;
+    margin-bottom: 30px;
+  }
 }

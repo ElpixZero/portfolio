@@ -1,6 +1,6 @@
 .contact-me {
   .container {
-    height: 670px;
+    padding-bottom: 30px;
     background-image: url(../img/img-6.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -12,12 +12,12 @@
   }
 
   .footer_owner-card {
-    max-width: 330px;
+    min-width: 330px;
     margin-top: 50px;
+    margin-right: 50px;
 
     .owner_logo {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       margin-bottom: 60px;
 
@@ -57,6 +57,10 @@
       color: rgb(255, 255, 255);
       line-height: 1;
       margin-bottom: 35px;
+      &:hover {
+        transform: scale(1.1);
+      }
+      
 
       &:before {
         font-family: "FontAwesome";
@@ -80,6 +84,9 @@
       font-family: 'Open Sans', sans-serif;
       line-height: 1;
       margin-bottom: 35px;
+      &:hover {
+        transform: scale(1.1);
+      }
 
       a {
         color: rgb(255, 255, 255);
@@ -105,12 +112,18 @@
 
     .mail {
       margin-bottom: 60px;
+      height: 20px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       a {
+        line-height: 20px;
         font-size: 14px;
         font-family: 'Open Sans', sans-serif;
         color: rgb(255, 255, 255);
-        line-height: 1;
+        vertical-align: top;
       }
 
       &:before {
@@ -126,12 +139,7 @@
         font-size: 20px;
         content: "\f0e0";
         margin-right: 25px;
-        vertical-align: middle;
       }
-    }
-
-    .download-resume {
-      margin-bottom: 60px;
     }
 
     .social {
@@ -188,13 +196,17 @@
   }
 
   .feedback {
-    width: 775px;
+    max-width: 775px;
+    min-width: 400px;
+    width: 100%;
 
     &-form {
       display: flex;
       flex-direction: column;
+      font-family: sans-serif;
 
       &_item {
+        color: #fff;
         font-size: 15px;
         font-family: 'Raleway', sans-serif;
         text-align: center;
@@ -224,9 +236,161 @@
         background-color: #FDC426;
         font-size: 20px;
         font-family: "Raleway", sans-serif;
-        color: rgb(254, 254, 254);
+        color: #000;
         font-weight: bold;
       }
     }
   }
 }
+
+@media (min-width: 768px) and (max-width: 1050px) {
+  .contact-me {
+  
+    .footer_owner-card {
+      min-width: 200px;
+      margin-top: 0;
+
+     .owner_logo {
+       flex-direction: column;
+       margin-right: 0;
+       align-items: flex-start;
+       margin-bottom: 50px;
+
+       .logo-owner_footer {
+        margin-bottom: 30px;
+       }
+     }
+
+     .social {
+       max-width: 200px;
+     }
+
+     .location {
+       margin-bottom: 25px;
+       &:before {
+         margin-right: 15px;
+       }
+     }
+
+      .phone {
+        margin-bottom: 25px;
+        &:before {
+          margin-right: 10px;      
+        }
+      }
+
+     .mail {
+       margin-bottom: 50px;
+       &:before {
+        margin-right: 10px;
+        }
+      }
+    }
+  } 
+}
+
+@media (max-width: 767px) {
+  .contact-me {
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer_owner-card {
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+
+      .owner-contacts {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+
+      .owner_logo {
+        margin-bottom: 50px;
+        justify-content: center;
+
+        .logo-owner_footer {
+          margin-right: 40px;
+        }
+      }
+
+      .mail {
+        margin-bottom: 30px;
+        &:before {
+          margin-right: 10px;
+        }
+      }
+
+      .social {
+        margin: 0 auto;
+        width: 60%;
+        justify-content: space-between;      
+      }
+
+      .location {
+        &:before {
+          margin-right: 15px;
+        }
+      }
+ 
+      .phone {
+        &:before {
+          margin-right: 10px;      
+        }
+      }
+    }
+  } 
+}
+
+
+@media (max-width: 551px) {
+  .contact-me {
+   
+
+    .footer_owner-card {
+      min-width: 250px;
+
+      .owner_logo {
+        justify-content: flex-start;
+
+        .logo-owner_footer {
+          margin-right: 25px;
+        }
+      }
+
+      .owner-contacts {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .social {
+        margin: 0;
+      }
+      
+
+      .mail {
+        
+      }
+
+      .location {
+        
+      }
+ 
+      .phone {
+        
+      }
+    }
+
+    .feedback {
+      min-width: 250px;
+    }
+  } 
+}
+
+
+
+
+
+
