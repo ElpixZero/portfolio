@@ -1,3 +1,6 @@
+.contact-me {
+  background-color: #F5F5F5;
+}
 .contact-me .container {
   padding-bottom: 30px;
   background-image: url(../img/img-6.png);
@@ -328,6 +331,7 @@
 @media (max-width: 551px) {
   .contact-me .footer_owner-card {
     min-width: 250px;
+    padding-top: 50px;
   }
   .contact-me .footer_owner-card .owner_logo {
     -webkit-box-pack: start;
@@ -351,5 +355,6 @@
   }
   .contact-me .feedback {
     min-width: 250px;
+    margin-top: 30px;
   }
 }

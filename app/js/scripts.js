@@ -69,7 +69,6 @@ $(document).ready(function() {
 
 			if (i == 1) {
 				c.lineTo(75, 75);
-				console.log('jr');
 			}
 
 			c.fillStyle = args.colors[i]; 

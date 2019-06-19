@@ -366,6 +366,9 @@ li {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .container .owner_description .education__title {
+    margin-bottom: 30px;
+  }
 }
 .header__wrapper {
   max-width: 1444px;
@@ -551,6 +554,31 @@ li {
 .about-me .container .owner_description .education .content__item {
   display: block;
   margin-bottom: 5px;
+}
+@media (max-width: 1024px) {
+  .about-me .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .about-me .container .section-content {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+  }
+  .about-me .container .owner_description {
+    margin-left: 50px;
+  }
+  .about-me .container .owner_photo {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 1000px) {
+  .about-me .container .owner_description {
+    margin-left: 0;
+  }
+  .about-me .container .owner_photo {
+    display: none;
+  }
 }
 .my-education {
   display: none;
@@ -842,6 +870,9 @@ li {
   font-size: 16px;
   color: #716e5b;
   letter-spacing: 1.2px;
+}
+.contact-me {
+  background-color: #F5F5F5;
 }
 .contact-me .container {
   padding-bottom: 30px;
@@ -1173,6 +1204,7 @@ li {
 @media (max-width: 551px) {
   .contact-me .footer_owner-card {
     min-width: 250px;
+    padding-top: 50px;
   }
   .contact-me .footer_owner-card .owner_logo {
     -webkit-box-pack: start;
@@ -1196,15 +1228,15 @@ li {
   }
   .contact-me .feedback {
     min-width: 250px;
+    margin-top: 30px;
   }
 }
 .mail-error {
-  height: 40px;
-  padding: 5px;
+  min-height: 40px;
+  padding: 4px;
   color: #fff;
   text-align: left;
   font-size: 15px;
-  line-height: 30px;
   border: 1px solid red;
   margin-top: -60px;
   margin-bottom: 20px;
