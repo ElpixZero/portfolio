@@ -380,7 +380,7 @@ li {
   position: relative;
   z-index: 1;
 }
-.header_top {
+.header__top {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -392,15 +392,7 @@ li {
   -webkit-align-items: center;
           align-items: center;
 }
-.header_top .logo {
-  width: 24px;
-  height: 52px;
-}
-.header_top .logo img {
-  display: block;
-  width: 100%;
-}
-.header_top .nav_item {
+.nav__item {
   display: inline-block;
   font-size: 16px;
   color: #ffffff;
@@ -411,19 +403,27 @@ li {
   transition: transform 0.5s ease 0.1s;
   transition: transform 0.5s ease 0.1s, -webkit-transform 0.5s ease 0.1s;
 }
-.header_top .nav_item:hover {
+.nav__item:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-.header_top .nav_item:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
-.header_main {
+.logo {
+  width: 24px;
+  height: 52px;
+}
+.logo img {
+  display: block;
+  width: 100%;
+}
+.header__main {
   padding-top: 117px;
   padding-bottom: 172px;
 }
-.header_main .header_owner-card {
+.header__main .header_owner-card {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -435,7 +435,7 @@ li {
   width: 218px;
   height: 285px;
 }
-.header_main .name {
+.header__main .name {
   font-family: "Aller Display", sans-serif;
   font-weight: 600;
   font-size: 34px;
@@ -446,7 +446,7 @@ li {
   margin-bottom: 5px;
   letter-spacing: 2px;
 }
-.header_main .profession {
+.header__main .profession {
   margin-bottom: 30px;
   font-size: 16px;
   color: #ffffff;
@@ -845,9 +845,9 @@ li {
   color: #000;
 }
 .my-portfolio .my-works_item .description .link_site:hover {
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.025);
+      -ms-transform: scale(1.025);
+          transform: scale(1.025);
   font-weight: 700;
 }
 .my-portfolio .my-works_item .description .link_site:before {
@@ -870,6 +870,18 @@ li {
   font-size: 16px;
   color: #716e5b;
   letter-spacing: 1.2px;
+}
+.my-portfolio .my-works .tetris {
+  display: none;
+}
+.my-portfolio .my-works .freeREU .description {
+  bottom: -91%;
+}
+.my-portfolio .my-works .freeREU .description .name {
+  text-transform: none;
+}
+.my-portfolio .my-works .pepelatzh .description {
+  bottom: -91%;
 }
 .contact-me {
   background-color: #F5F5F5;

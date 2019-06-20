@@ -106,9 +106,9 @@
   color: #000;
 }
 .my-portfolio .my-works_item .description .link_site:hover {
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.025);
+      -ms-transform: scale(1.025);
+          transform: scale(1.025);
   font-weight: 700;
 }
 .my-portfolio .my-works_item .description .link_site:before {
@@ -131,4 +131,16 @@
   font-size: 16px;
   color: #716e5b;
   letter-spacing: 1.2px;
+}
+.my-portfolio .my-works .tetris {
+  display: none;
+}
+.my-portfolio .my-works .freeREU .description {
+  bottom: -91%;
+}
+.my-portfolio .my-works .freeREU .description .name {
+  text-transform: none;
+}
+.my-portfolio .my-works .pepelatzh .description {
+  bottom: -91%;
 }
