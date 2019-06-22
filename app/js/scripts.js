@@ -1,34 +1,5 @@
 const $ = require('jquery');
 
-/*
-const nodemailer = require("nodemailer");
-const transporter = nodemailer.createTransport({
-	host: 'smtp.yandex.ru',
-	port: 465,
-	secure: true, // true for 465, false for other ports
-	auth: {
-			user: 'portfolio-elpix@yandex.ru',
-			pass: 'xUssrru-001y'
-	},
-	from: 'Mailer test <portfolio-elpix@yandex.ru>',
-});
-
-const mailer = message => {
-	transporter.sendMail(message, (err, info) => {
-		if (err) console.log(err);
-		console.log('Email sent:', info);
-	})
-}
-
-const message = {
-	from: 'Mailer test <mckenzie.kihn79@ethereal.email>',
-	to: "someadress@mail.ru",
-	subjects: 'Fuck you',
-	text: "I'm the Conor Mcgregor. You know everything. Just do it"
-}
-
-mailer(message);
-*/
 $(document).ready(function() {
 
 	const canvas = $('.canvas-elements canvas');
@@ -42,7 +13,7 @@ $(document).ready(function() {
 					[0, 0.6, 0],
 					[0, 0.6, 0],
 					[0, 0.5, 0],
-					[0, 0.8, 0],
+					[0, 0.7, 0],
 					[0, 0.6, 0],
 					[0, 0.7, 0],
 				],
@@ -50,12 +21,12 @@ $(document).ready(function() {
 					[0.6, 0, 2],
 					[0.6, 0, 2],
 					[0.5, 0, 2],
-					[0.8, 0, 2],
+					[0.7, 0, 2],
 					[0.6, 0, 2],
 					[0.7, 0, 2]
 				],
 			},
-			text: ['70 %', '70 %', '75 %', '60 %', '70 %', '65 %']
+			text: ['70 %', '70 %', '75 %', '65 %', '70 %', '65 %']
 		}
 
 		canvas[a].width = 150;

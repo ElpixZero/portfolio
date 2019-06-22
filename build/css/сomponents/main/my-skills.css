@@ -4,7 +4,7 @@
   background-size: 100% 100%;
   padding-top: 30px;
 }
-.my-skills .container .title {
+.my-skills__title {
   text-align: center;
   font-size: 30px;
   margin-bottom: 50px;
@@ -12,7 +12,7 @@
   font-weight: 700;
   color: black;
 }
-.my-skills .container .canvas-elements {
+.canvas-elements {
   padding-bottom: 120px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -24,31 +24,33 @@
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.my-skills .container .canvas-elements .canvas-element {
+.canvas-element {
   min-width: 150px;
   text-align: center;
 }
-.my-skills .container .canvas-elements .canvas-element:hover {
+.canvas-element:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-.my-skills .container .canvas-elements .canvas-element .description {
+.canvas-element .description {
   font-size: 17px;
   margin-top: 15px;
-  text-transform: uppercase;
 }
-.my-skills .container .canvas-elements .canvas-element .description span {
+.canvas-element_builds {
   display: block;
   color: #939295;
   font-size: 12px;
   text-transform: lowercase;
 }
+.canvas-element_js {
+  text-transform: none;
+}
 @media (max-width: 1050px) {
-  .my-skills .container .canvas-elements {
+  .canvas-elements {
     padding-bottom: 20px;
   }
-  .my-skills .container .canvas-element {
+  .canvas-element {
     -webkit-flex-basis: 33%;
             flex-basis: 33%;
     margin-bottom: 50px;
@@ -65,12 +67,12 @@
   }
 }
 @media (max-width: 390px) {
-  .my-skills .container .canvas-elements {
+  .canvas-elements {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
             justify-content: center;
   }
-  .my-skills .container .canvas-element {
+  .canvas-element {
     -webkit-flex-basis: 100%;
             flex-basis: 100%;
     margin-bottom: 30px;
