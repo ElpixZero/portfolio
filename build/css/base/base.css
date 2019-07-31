@@ -20,6 +20,94 @@ li {
   margin-left: auto;
   margin-right: auto;
 }
+.description {
+  color: #000;
+  display: none;
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 47%;
+  -webkit-transition: bottom, opacity 0.5s;
+  transition: bottom, opacity 0.5s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  width: 320px;
+  background-color: #c1c1c1;
+  font-size: 20px;
+  font-weight: 500;
+}
+.description:hover {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.description__item {
+  padding-left: 5px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.description .name {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  font-size: 22px;
+  border-bottom: 1px solid black;
+  letter-spacing: 1.5px;
+}
+.description .type {
+  margin-top: 5px;
+}
+.description .type:before {
+  content: "type: ";
+  font-size: 16px;
+  color: #5b594d;
+  letter-spacing: 1.2px;
+}
+.description .stack:before {
+  content: "stack: ";
+  font-size: 16px;
+  color: #716e5b;
+  letter-spacing: 1.2px;
+}
+.description .link_site {
+  color: #000;
+}
+.description .link_site:hover {
+  -webkit-transform: scale(1.025);
+      -ms-transform: scale(1.025);
+          transform: scale(1.025);
+  font-weight: 700;
+}
+.description .link_site:before {
+  content: "link: ";
+  font-size: 16px;
+  color: #716e5b;
+  letter-spacing: 1.2px;
+}
+.description .link_github {
+  color: #000;
+}
+.description .link_github:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  font-weight: 700;
+}
+.description .link_github:before {
+  content: "github: ";
+  font-size: 16px;
+  color: #716e5b;
+  letter-spacing: 1.2px;
+}
 .download-resume a {
   font-size: 12px;
   color: #ffffff;
