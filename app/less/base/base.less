@@ -21,6 +21,96 @@ li {
   margin-right: auto;
 }
 
+.description {
+  color: #000;
+  display: none;
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 47%;
+  transition: bottom, opacity 0.5s;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: #c1c1c1;
+  font-size: 20px;
+  font-weight: 500;
+
+  &:hover {
+    transform: translateY(0);
+  }
+
+  &__item {
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .name {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    border-bottom: 1px solid black;
+    letter-spacing: 1.5px;
+  }
+
+  .type {
+    margin-top: 5px;
+
+    &:before {
+      content: "type: ";
+      font-size: 16px;
+      color:rgb(91, 89, 77);
+      letter-spacing: 1.2px;
+    }
+  }
+
+  .stack {
+    &:before {
+      content: "stack: ";
+      font-size: 16px;
+      color: rgba(#716E5B);
+      letter-spacing: 1.2px;
+    }
+  }
+
+  .link {
+    &_site {
+      color: #000;
+      &:hover {
+        transform: scale(1.025);
+        font-weight: 700;
+      }
+      &:before {
+        content: "link: ";
+        font-size: 16px;
+        color: rgba(#716E5B);
+        letter-spacing: 1.2px;
+      }
+    }
+    
+    &_github {
+      color: #000;
+      &:hover {
+        transform: scale(1.05);
+        font-weight: 700;
+      }
+      &:before {
+        content: "github: ";
+        font-size: 16px;
+        color: rgba(#716E5B);
+        letter-spacing: 1.2px;
+      }
+    }
+    
+  }
+}
+
 .download-resume {
   a {
     font-size: 12px;

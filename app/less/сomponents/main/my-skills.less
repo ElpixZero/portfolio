@@ -8,45 +8,100 @@
   }
 
   &__title {
-    text-align: center;
-    font-size: 30px;
     margin-bottom: 50px;
-    letter-spacing: 1.5px;
-    font-weight: 700;
-    color: black;
   }
 }
 
-
-.canvas-elements {
-  padding-bottom: 120px;
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Open Sans', sans-serif;
-  flex-wrap: wrap;
-}
-
-.canvas-element {
-  min-width: 150px;
-  text-align: center;
-  &:hover {
-    transform: scale(1.1);
+.canvas {
+  &-elements {
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
   }
 
-  .description {
-    font-size: 17px;
-    margin-top: 15px;
+  &__description {
+    width: 220px;
+    border-radius: 3%;
+    background-color: #f5f5f5;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      padding-left: 25px;
+      
+      li {
+        list-style: circle;
+      }
+    }
+
+    &__item {
+    
+    }
   }
 
-  &_builds {
-    display: block;
-    color: #939295;
-    font-size: 12px;
-    text-transform: lowercase;
+  &-element {
+    z-index: 1;
+    position: relative;
+    min-width: 150px;
+    text-align: center;
+
+     &:hoverr {
+      z-index: 99;
+      transform: scale(1.1);
+
+      .canvas__description_html {
+        bottom: -88%;
+      }
+
+      .canvas__description_bd {
+        bottom: -60%;
+      }
+
+      .canvas__description_js {
+        bottom: -120%;
+      }
+
+      .canvas__description_react {
+        bottom: -105%;
+      }
+
+      .canvas__description_pt {
+        bottom: -50%;
+      }
+
+      .canvas__description_git {
+        bottom: -55%;
+      }
+      
+
+      .description {
+        display: flex;
+        opacity: 1;
+      }
+    }
+  
+    .description-canvas {
+      font-size: 17px;
+      margin-top: 15px;
+    }
+  
+    &_builds {
+      display: block;
+      color: #939295;
+      font-size: 12px;
+      text-transform: lowercase;
+    }
+  
+    &_js {
+      text-transform: none;
+    }
   }
 
-  &_js {
-    text-transform: none;
+  &__description {
+    display: none;
   }
 }
 
